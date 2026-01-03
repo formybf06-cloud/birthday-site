@@ -101,7 +101,11 @@ export default function App() {
               Hello <br /> My Love!
             </h1>
 
-            <p style={styles.text}>Something special is waiting for you. Are you ready?</p>
+            <p style={styles.introSubtitle}>
+  Something special is waiting for you. Are you ready?
+</p>
+
+
 
             <div style={styles.row}>
               <button style={styles.primaryBtn} onClick={() => setStep(2)}>
@@ -288,16 +292,6 @@ messageDivider: {
   margin: "12px 0 18px",
 },
 
-messageText: {
-  fontFamily: "'Dancing Script', cursive",
-  fontSize: "1.3rem",
-  lineHeight: 1.9,
-  color: "#2f2f2f",
-  textAlign: "left",
-},
-
-
-
 messageSignature: {
   marginTop: 20,
   textAlign: "right",
@@ -369,19 +363,6 @@ note: {
 },
 
 
-note: {
-  position: "absolute",
-  maxWidth: 160,
-  padding: "10px 14px",
-  fontSize: 13,
-  background: "#fff",
-  borderRadius: 16,
-  border: "2px solid #b11226",
-  color: "#b11226",
-},
-
-
-
   card: {
     background: "#fff",
     borderRadius: "32px",
@@ -428,6 +409,25 @@ note: {
   overflow: "hidden",
   background: "#000",
 },
+
+introSubtitle: {
+  marginTop: 12,
+  marginBottom: 24,
+  fontSize: "1.1rem",
+  lineHeight: 1.5,
+  textAlign: "center",
+  color: "#555",
+  padding: "0 20px",
+},
+
+subtitle: {
+  fontSize: "2rem",
+  color: "#b11226",
+  marginBottom: 20,
+  textAlign: "center",
+},
+
+
 
   flowerBox: { fontSize: "3rem", margin: 24 },
   video: { borderRadius: 16, border: "none" },
