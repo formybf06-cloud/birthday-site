@@ -101,7 +101,7 @@ export default function App() {
               Hello <br /> My Love!
             </h1>
 
-            <p style={styles.text}>Something special waiting for you. Are you ready?</p>
+            <p style={styles.text}>Something special is waiting for you. Are you ready?</p>
 
             <div style={styles.row}>
               <button style={styles.primaryBtn} onClick={() => setStep(2)}>
