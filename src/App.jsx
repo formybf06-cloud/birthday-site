@@ -170,7 +170,7 @@ export default function App() {
     Together, we flourish like flowers in endless sun 🌻
   </div>
 
-  <div style={{ ...styles.note, top: "55%", left: "5%", animationDelay: "1s" }}>
+  <div style={{ ...styles.note, top: "55%", left: "4%", animationDelay: "1s" }}>
      Ever-blooming love 🌷
   </div>
 
@@ -181,7 +181,7 @@ export default function App() {
    Petals of joy 🌼
   </div>
 
-  <div style={{ ...styles.note, top: "58%", right: "6%", animationDelay: "1.5s" }}>
+  <div style={{ ...styles.note, top: "58%", right: "4%", animationDelay: "1.5s" }}>
     With you, love is not rushed—it grows slowly, deeply, and beautifully.
   </div>
 
