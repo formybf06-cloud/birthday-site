@@ -166,11 +166,11 @@ export default function App() {
 
       <div style={styles.notes}>
   {/* LEFT SIDE */}
-  <div style={{ ...styles.note, top: "22%", left: "4%" }}>
+  <div className="note" style={{ ...styles.note, top: "22%", left: "4%" }}>
     Together, we flourish like flowers in endless sun 🌻
   </div>
 
-  <div style={{ ...styles.note, top: "55%", left: "8%", animationDelay: "1s" }}>
+  <div style={{ ...styles.note, top: "55%", left: "5%", animationDelay: "1s" }}>
      Ever-blooming love 🌷
   </div>
 
@@ -351,16 +351,17 @@ notes: {
 
 note: {
   position: "absolute",
-  maxWidth: 170,
-  padding: "12px 16px",
-  fontSize: 14,
+  maxWidth: 160,
+  padding: "10px 14px",
+  fontSize: 13,
   background: "#fff",
-  borderRadius: 999,
+  borderRadius: 16,
   border: "2px solid #b11226",
   color: "#b11226",
-  boxShadow: "0 10px 20px rgba(0,0,0,0.08)",
-  animation: "floatBubble 6s ease-in-out infinite",
+
 },
+
+
 
 
   card: {
@@ -442,22 +443,33 @@ style.innerHTML = `
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
-  @keyframes softZoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
+@keyframes softZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
 
 @keyframes floatUp {
   0% { transform: translateY(0); opacity: 0; }
   10% { opacity: 0.8; }
   100% { transform: translateY(-110vh); opacity: 0; }
-}`;
+}
+
+/* ✅ MOBILE FIX FOR NOTES */
+@media (max-width: 480px) {
+  .note {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    max-width: 85%;
+    font-size: 12px;
+    margin: 8px auto;
+    display: block;
+    text-align: center;
+  }
+}
+`;
 document.head.appendChild(style);
